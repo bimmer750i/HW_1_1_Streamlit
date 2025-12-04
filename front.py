@@ -9,9 +9,7 @@ from local_preprocessing import local_preprocess
 
 REQUIRED_COLUMNS = ['year', 'km_driven', 'mileage', 'engine', 'max_power', 'seats']
 
-if 'form_inputs' not in st.session_state:
-    st.session_state.form_inputs = {field: 0 for field in REQUIRED_COLUMNS}
-
+# Хотел подпись по центру. Deepseek помог
 st.markdown("<h2 style='text-align: center;'>Car price analysis</h2>",
             unsafe_allow_html=True)
 # Кешируем модель
